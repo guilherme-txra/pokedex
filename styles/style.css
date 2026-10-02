@@ -42,11 +42,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 2px solid #00000096;
+    width: 33px;
+    height: 33px;
+    border: 2px solid #000000;
     border-radius: 50%;
     transition: transform 0.2s;
+    background-color: rgb(255, 214, 30);
 }
 
 .menu img {
@@ -65,7 +66,7 @@ body {
     gap: 5px;
 }
 
-#namePokemon {
+#pokemonName {
     border: 1px solid rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     padding: 8px 12px;
@@ -93,4 +94,32 @@ body {
 
 #search:hover {
     transform: scale(1.1);
+}
+
+.card{
+    border: 8px solid rgb(8, 77, 2);
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 380px;
+    background: linear-gradient(135deg,#3fa03b 10%, #ffffff 60%, #3fa03b );
+    box-shadow: 3px 5px 15px rgb(0 0 0 / 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transform: matrix3d();
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.card-img{
+    background-color: white;
 }

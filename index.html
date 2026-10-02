@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon" style="width: auto;">
 
     <link rel="stylesheet" href="/styles/style.css">
 </head>
@@ -17,17 +18,21 @@
                 <li><a href="#"><img src="/image/star.png" alt=""></a></li>
             </ul>
             <div class="search-bar">
-                <input id="namePokemon" type="text" placeholder="...">
-                <button id="search">
+                <input id="pokemonName" type="text" placeholder="...">
+                <button id="search" onclick="fetchApi()">
                     <img src="/image/lupa.png" alt="">
                 </button>
             </div>     
         </div>
     </header>
 
-    <div class="card">
-        
-    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="" class="pokemonSprite">
+            <div class="content"></div>
+        </div>
+    </div>    
+
 
     <script src="scripts/script.js"></script>
 </body>
